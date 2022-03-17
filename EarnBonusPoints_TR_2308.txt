@@ -1,0 +1,79 @@
+{
+  "Upgrade SC_iStock-504877086.png": {
+    "tag": "bookmark-blue",
+    "sunniesHTMLWidget": "<a style='color:white' href='https://www.sunexpress.com/reservation/ibe/modify?locale=tr'><div class='earn-sunnies__text-container'><div class='earn-sunnies__headline'> <div class='earn-sunnies__small'>Puan topla</div><div class='earn-sunnies__title'>Tarifenizi SunClassic'e yükseltin </div> </div><div class='earn-sunnies__pricetag'><span>195</span><span><svg xmlns:xlink='http://www.w3.org/1999/xlink' class='icon icon-sunnies-s'><use xlink:href='#icon-sunnies-s'></use></svg></span></div></div></a>",
+    "sunniesHTMLPage": "<div class='earn-use-sunnies__coins'>195<svg xmlns:xlink='http://www.w3.org/1999/xlink' class='icon icon-sunnies-s'><use xlink:href='#icon-sunnies-s'></use></svg></div>",
+    "promotionHTML": "<svg xmlns:xlink='http://www.w3.org/1999/xlink' class='icon icon-plane-top-diag'><use xlink:href='#icon-plane-top-diag'></use></svg>",
+    "labellingHTML": "<div class='earn-use-sunnies__footer'><div class='earn-use-sunnies__title'>Tarifenizi SunClassic'e yükseltin</div><a href='https://www.sunexpress.com/reservation/ibe/modify?locale=tr'>Tarifenizi yükseltin <svg xmlns:xlink='http://www.w3.org/1999/xlink' class='icon icon-arrow-short-right'><use xlink:href='#icon-arrow-short-right'></use></svg></a></div>"
+  },
+  "Upgrade SP_iStock_000062238706_XXXLarge.png": {
+    "tag": "bookmark-blue",
+    "sunniesHTMLWidget": "<a style='color:white' href='https://www.sunexpress.com/reservation/ibe/modify?locale=tr'><div class='earn-sunnies__text-container'><div class='earn-sunnies__headline'> <div class='earn-sunnies__small'>Puan topla</div><div class='earn-sunnies__title'>Tarifenizi SunPremium'a yükseltin</div> </div><div class='earn-sunnies__pricetag'><span>495</span><span><svg xmlns:xlink='http://www.w3.org/1999/xlink' class='icon icon-sunnies-s'><use xlink:href='#icon-sunnies-s'></use></svg></span></div></div></a>",
+    "sunniesHTMLPage": "<div class='earn-use-sunnies__coins'>495<svg xmlns:xlink='http://www.w3.org/1999/xlink' class='icon icon-sunnies-s'><use xlink:href='#icon-sunnies-s'></use></svg></div>",
+    "promotionHTML": "<svg xmlns:xlink='http://www.w3.org/1999/xlink' class='icon icon-plane-top-diag'><use xlink:href='#icon-plane-top-diag'></use></svg>",
+    "labellingHTML": "<div class='earn-use-sunnies__footer'><div class='earn-use-sunnies__title'>Tarifenizi SunPremium'a yükseltin</div><a href='https://www.sunexpress.com/reservation/ibe/modify?locale=tr'>Tarifenizi yükseltin <svg xmlns:xlink='http://www.w3.org/1999/xlink' class='icon icon-arrow-short-right'><use xlink:href='#icon-arrow-short-right'></use></svg></a></div>"
+  },
+  "Seat_iStock_000056096988_XXXLarge.png": {
+    "tag": "bookmark-blue",
+    "sunniesHTMLWidget": "<a style='color:white' href='https://www.sunexpress.com/reservation/ibe/modify?locale=tr'><div class='earn-sunnies__text-container'><div class='earn-sunnies__headline'> <div class='earn-sunnies__small'>Puan topla</div><div class='earn-sunnies__title'>En sevdiğiniz yeri ayırtın </div> </div><div class='earn-sunnies__pricetag'><span>60</span><span><svg xmlns:xlink='http://www.w3.org/1999/xlink' class='icon icon-sunnies-s'><use xlink:href='#icon-sunnies-s'></use></svg></span></div></div></a>",
+    "sunniesHTMLPage": "<div class='earn-use-sunnies__coins'>60<svg xmlns:xlink='http://www.w3.org/1999/xlink' class='icon icon-sunnies-s'><use xlink:href='#icon-sunnies-s'></use></svg></div>",
+    "promotionHTML": "<svg xmlns:xlink='http://www.w3.org/1999/xlink' class='icon icon-plane-top-diag'><use xlink:href='#icon-plane-top-diag'></use></svg>",
+    "labellingHTML": "<div class='earn-use-sunnies__footer'><div class='earn-use-sunnies__title'>En sevdiğiniz yeri ayırtın </div><a href='https://www.sunexpress.com/reservation/ibe/modify?locale=tr'>Şimdi satın alın <svg xmlns:xlink='http://www.w3.org/1999/xlink' class='icon icon-arrow-short-right'><use xlink:href='#icon-arrow-short-right'></use></svg></a></div>"
+  },
+  "XLeg Seat_iStock_000032592652_Double.png": {
+    "tag": "bookmark-blue",
+    "sunniesHTMLWidget": "<a style='color:white' href='https://www.sunexpress.com/reservation/ibe/modify?locale=tr'><div class='earn-sunnies__text-container'><div class='earn-sunnies__headline'> <div class='earn-sunnies__small'>Puan topla</div><div class='earn-sunnies__title'>XLeg koltuk keyfi yapın</div> </div><div class='earn-sunnies__pricetag'><span>120</span><span><svg xmlns:xlink='http://www.w3.org/1999/xlink' class='icon icon-sunnies-s'><use xlink:href='#icon-sunnies-s'></use></svg></span></div></div></a>",
+    "sunniesHTMLPage": "<div class='earn-use-sunnies__coins'>120<svg xmlns:xlink='http://www.w3.org/1999/xlink' class='icon icon-sunnies-s'><use xlink:href='#icon-sunnies-s'></use></svg></div>",
+    "promotionHTML": "<svg xmlns:xlink='http://www.w3.org/1999/xlink' class='icon icon-plane-top-diag'><use xlink:href='#icon-plane-top-diag'></use></svg>",
+    "labellingHTML": "<div class='earn-use-sunnies__footer'><div class='earn-use-sunnies__title'>XLeg koltuk keyfi yapın</div><a href='https://www.sunexpress.com/reservation/ibe/modify?locale=tr'>Şimdi satın alın <svg xmlns:xlink='http://www.w3.org/1999/xlink' class='icon icon-arrow-short-right'><use xlink:href='#icon-arrow-short-right'></use></svg></a></div>"
+  },
+  "5kg luggage_iStock-182181519.png": {
+    "tag": "bookmark-blue",
+    "sunniesHTMLWidget": "<a style='color:white' href='https://www.sunexpress.com/reservation/ibe/modify?locale=tr'><div class='earn-sunnies__text-container'><div class='earn-sunnies__headline'> <div class='earn-sunnies__small'>Puan topla</div><div class='earn-sunnies__title'>5kg ek bagaj ekleyin </div> </div><div class='earn-sunnies__pricetag'><span>90</span><span><svg xmlns:xlink='http://www.w3.org/1999/xlink' class='icon icon-sunnies-s'><use xlink:href='#icon-sunnies-s'></use></svg></span></div></div></a>",
+    "sunniesHTMLPage": "<div class='earn-use-sunnies__coins'>90<svg xmlns:xlink='http://www.w3.org/1999/xlink' class='icon icon-sunnies-s'><use xlink:href='#icon-sunnies-s'></use></svg></div>",
+    "promotionHTML": "<svg xmlns:xlink='http://www.w3.org/1999/xlink' class='icon icon-plane-top-diag'><use xlink:href='#icon-plane-top-diag'></use></svg>",
+    "labellingHTML": "<div class='earn-use-sunnies__footer'><div class='earn-use-sunnies__title'>5kg ek bagaj ekleyin </div><a href='https://www.sunexpress.com/reservation/ibe/modify?locale=tr'>Şimdi satın alın<svg xmlns:xlink='http://www.w3.org/1999/xlink' class='icon icon-arrow-short-right'><use xlink:href='#icon-arrow-short-right'></use></svg></a></div>"
+  },
+  "10kg luggage_iStock-820564522.png": {
+    "tag": "bookmark-orange",
+    "sunniesHTMLWidget": "<a style='color:white' href='https://www.sunexpress.com/reservation/ibe/modify?locale=tr'><div class='earn-sunnies__text-container'><div class='earn-sunnies__headline'> <div class='earn-sunnies__small'>Puan topla</div><div class='earn-sunnies__title'>10kg ek bagaj ekleyin </div> </div><div class='earn-sunnies__pricetag'><span>180</span><span><svg xmlns:xlink='http://www.w3.org/1999/xlink' class='icon icon-sunnies-s'><use xlink:href='#icon-sunnies-s'></use></svg></span></div></div></a>",
+    "sunniesHTMLPage": "<div class='earn-use-sunnies__coins'>180<svg xmlns:xlink='http://www.w3.org/1999/xlink' class='icon icon-sunnies-s'><use xlink:href='#icon-sunnies-s'></use></svg></div>",
+    "promotionHTML": "<svg xmlns:xlink='http://www.w3.org/1999/xlink' class='icon icon-passengers'><use xlink:href='#icon-passengers'></use></svg>",
+    "labellingHTML": "<div class='earn-use-sunnies__footer'><div class='earn-use-sunnies__title'>10kg ek bagaj ekleyin </div><a href='https://www.sunexpress.com/reservation/ibe/modify?locale=tr'>Şimdi satın alın <svg xmlns:xlink='http://www.w3.org/1999/xlink' class='icon icon-arrow-short-right'><use xlink:href='#icon-arrow-short-right'></use></svg></a></div>"
+  },
+  "15kg luggage_iStock-813591578.png": {
+    "tag": "bookmark-orange",
+    "sunniesHTMLWidget": "<a style='color:white' href='https://www.sunexpress.com/reservation/ibe/modify?locale=tr'><div class='earn-sunnies__text-container'><div class='earn-sunnies__headline'> <div class='earn-sunnies__small'>Puan topla</div><div class='earn-sunnies__title'>15kg ek bagaj ekleyin </div> </div><div class='earn-sunnies__pricetag'><span>270</span><span><svg xmlns:xlink='http://www.w3.org/1999/xlink' class='icon icon-sunnies-s'><use xlink:href='#icon-sunnies-s'></use></svg></span></div></div></a>",
+    "sunniesHTMLPage": "<div class='earn-use-sunnies__coins'>270<svg xmlns:xlink='http://www.w3.org/1999/xlink' class='icon icon-sunnies-s'><use xlink:href='#icon-sunnies-s'></use></svg></div>",
+    "promotionHTML": "<svg xmlns:xlink='http://www.w3.org/1999/xlink' class='icon icon-passengers'><use xlink:href='#icon-passengers'></use></svg>",
+    "labellingHTML": "<div class='earn-use-sunnies__footer'><div class='earn-use-sunnies__title'>15kg ek bagaj ekleyin</div><a href='https://www.sunexpress.com/reservation/ibe/modify?locale=tr'>Şimdi satın alın <svg xmlns:xlink='http://www.w3.org/1999/xlink' class='icon icon-arrow-short-right'><use xlink:href='#icon-arrow-short-right'></use></svg></a></div>"
+  },
+  "20kg luggage_iStock-501709788.png": {
+    "tag": "bookmark-orange",
+    "sunniesHTMLWidget": "<a style='color:white' href='https://www.sunexpress.com/reservation/ibe/modify?locale=tr'><div class='earn-sunnies__text-container'><div class='earn-sunnies__headline'> <div class='earn-sunnies__small'>Puan topla</div><div class='earn-sunnies__title'>20kg ek bagaj ekleyin </div> </div><div class='earn-sunnies__pricetag'><span>360</span><span><svg xmlns:xlink='http://www.w3.org/1999/xlink' class='icon icon-sunnies-s'><use xlink:href='#icon-sunnies-s'></use></svg></span></div></div></a>",
+    "sunniesHTMLPage": "<div class='earn-use-sunnies__coins'>360<svg xmlns:xlink='http://www.w3.org/1999/xlink' class='icon icon-sunnies-s'><use xlink:href='#icon-sunnies-s'></use></svg></div>",
+    "promotionHTML": "<svg xmlns:xlink='http://www.w3.org/1999/xlink' class='icon icon-passengers'><use xlink:href='#icon-passengers'></use></svg>",
+    "labellingHTML": "<div class='earn-use-sunnies__footer'><div class='earn-use-sunnies__title'>20kg ek bagaj ekleyin </div><a href='https://www.sunexpress.com/reservation/ibe/modify?locale=tr'>Şimdi satın alın <svg xmlns:xlink='http://www.w3.org/1999/xlink' class='icon icon-arrow-short-right'><use xlink:href='#icon-arrow-short-right'></use></svg></a></div>"
+  },
+  "Invite a friend_iStock-802787630.png": {
+    "tag": "bookmark-orange",
+    "sunniesHTMLWidget": "<a style='color:white' href='https://www.sunexpress.com/sunexpress-your-benefits/memberportal/dashboard'><div class='earn-sunnies__text-container'><div class='earn-sunnies__headline'> <div class='earn-sunnies__small'>Puan topla</div><div class='earn-sunnies__title'>Arkdaşınızı davet edin</div> </div><div class='earn-sunnies__pricetag'><span>10</span><span><svg xmlns:xlink='http://www.w3.org/1999/xlink' class='icon icon-sunnies-s'><use xlink:href='#icon-sunnies-s'></use></svg></span></div></div></a>",
+    "sunniesHTMLPage": "<div class='earn-use-sunnies__coins'>10<svg xmlns:xlink='http://www.w3.org/1999/xlink' class='icon icon-sunnies-s'><use xlink:href='#icon-sunnies-s'></use></svg></div>",
+    "promotionHTML": "<svg xmlns:xlink='http://www.w3.org/1999/xlink' class='icon icon-passengers'><use xlink:href='#icon-passengers'></use></svg>",
+    "labellingHTML": "<div class='earn-use-sunnies__footer'><div class='earn-use-sunnies__title'>Arkadaşınızı davet edin</div><a href='https://www.sunexpress.com/sunexpress-your-benefits/memberportal/dashboard'>Davet et <svg xmlns:xlink='http://www.w3.org/1999/xlink' class='icon icon-arrow-short-right'><use xlink:href='#icon-arrow-short-right'></use></svg></a></div>"
+  },
+  "Link family accounts_iStock-883219052.png": {
+    "tag": "bookmark-orange",
+    "sunniesHTMLWidget": "<a style='color:white' href='https://www.sunexpress.com/sunexpress-your-benefits/memberportal/my-family'><div class='earn-sunnies__text-container'><div class='earn-sunnies__headline'> <div class='earn-sunnies__small'>Puan topla</div><div class='earn-sunnies__title'>Aile hesaplarınızı birleştirin </div> </div><div class='earn-sunnies__pricetag'><span>10</span><span><svg xmlns:xlink='http://www.w3.org/1999/xlink' class='icon icon-sunnies-s'><use xlink:href='#icon-sunnies-s'></use></svg></span></div></div></a>",
+    "sunniesHTMLPage": "<div class='earn-use-sunnies__coins'>10<svg xmlns:xlink='http://www.w3.org/1999/xlink' class='icon icon-sunnies-s'><use xlink:href='#icon-sunnies-s'></use></svg></div>",
+    "promotionHTML": "<svg xmlns:xlink='http://www.w3.org/1999/xlink' class='icon icon-passengers'><use xlink:href='#icon-passengers'></use></svg>",
+    "labellingHTML": "<div class='earn-use-sunnies__footer'><div class='earn-use-sunnies__title'>Aile hesaplarınızı birleştirin </div><a href='https://www.sunexpress.com/sunexpress-your-benefits/memberportal/my-family'>Buradan birleştirin <svg xmlns:xlink='http://www.w3.org/1999/xlink' class='icon icon-arrow-short-right'><use xlink:href='#icon-arrow-short-right'></use></svg></a></div>"
+  },
+  "200113_SunExpress_NL_Golf_951x635.jpg": {
+    "tag": "bookmark-orange",
+    "sunniesHTMLWidget": "<a style='color:white' href='https://www.sunexpress.com/reservation/ibe/modify?locale=en_US'><div class='earn-sunnies__text-container'><div class='earn-sunnies__headline'> <div class='earn-sunnies__small'>Puan topla</div><div class='earn-sunnies__title'>Golf Paket ekleyin</div> </div><div class='earn-sunnies__pricetag'><span>135</span><span><svg xmlns:xlink='http://www.w3.org/1999/xlink' class='icon icon-sunnies-s'><use xlink:href='#icon-sunnies-s'></use></svg></span></div></div></a>",
+    "sunniesHTMLPage": "<div class='earn-use-sunnies__coins'>135<svg xmlns:xlink='http://www.w3.org/1999/xlink' class='icon icon-sunnies-s'><use xlink:href='#icon-sunnies-s'></use></svg></div>",
+    "promotionHTML": "<svg xmlns:xlink='http://www.w3.org/1999/xlink' class='icon icon-passengers'><use xlink:href='#icon-passengers'></use></svg>",
+    "labellingHTML": "<div class='earn-use-sunnies__footer'><div class='earn-use-sunnies__title'>Golf Paket ekleyin</div><a href='https://www.sunexpress.com/reservation/ibe/modify?locale=en_US'>Şimdi satın alın <svg xmlns:xlink='http://www.w3.org/1999/xlink' class='icon icon-arrow-short-right'><use xlink:href='#icon-arrow-short-right'></use></svg></a></div>"
+  }
+}
