@@ -14,11 +14,16 @@ const INITIAL_STATE = {
 	error: null,
 	user: null,
 	tempPasswordScreen: false,
+	resetPasswordScreen: false,
 	passwordChangeSuccessMsg: false,
 	newPassword: "",
 	confirmPassword: "",
 	passwordError: 0,
-	passwordErrorCognitoMessage: ""
+	passwordErrorCognitoMessage: "",
+	resetPasswordError: 0,
+	resetPasswordErrorMessage: "",
+	tempPasswordScreenActivationCode: false,
+	activationCode: ""
 };
 
 class Login extends Component {
@@ -93,17 +98,32 @@ class Login extends Component {
 			this.setState(updateByPropertyName("passwordError", 1));
 			return;
 		}
-		if (this.state.confirmPassword === this.state.newPassword) {
+		if ((this.state.confirmPassword === this.state.newPassword) && this.state.tempPasswordScreenActivationCode === false) {
 			Auth.completeNewPassword(
 				this.state.user,               // the Cognito User Object
 				this.state.newPassword
-			).then(user => {debugger;
+			).then(user => {
 				this.setState(updateByPropertyName("tempPasswordScreen", false));
 				this.setState(updateByPropertyName("passwordChangeSuccessMsg", true));
 			}).catch(e => {
 				this.setState(updateByPropertyName("passwordError", 3));
 				this.setState(updateByPropertyName("passwordErrorCognitoMessage", e.message));
-			  console.log(e);
+			  	console.log(e);
+			});
+		} else if(this.state.tempPasswordScreenActivationCode) {
+			debugger;
+			Auth.forgotPasswordSubmit(this.state.email, this.state.activationCode, this.state.newPassword)
+			.then(data => {
+				debugger;
+				this.setState(updateByPropertyName("passwordChangeSuccessMsg", true));
+				this.setState(updateByPropertyName("tempPasswordScreen", false));
+				this.setState(updateByPropertyName("resetPasswordScreen", false));
+				this.setState(updateByPropertyName("resetPasswordError", 0));
+			})
+			.catch(e => {
+				debugger;
+				this.setState(updateByPropertyName("passwordError", 3));
+				this.setState(updateByPropertyName("passwordErrorCognitoMessage", e.message));
 			});
 		} else {
 			this.setState(updateByPropertyName("passwordError", 2));
@@ -111,12 +131,30 @@ class Login extends Component {
 		}
 	}
 
+	showForgotPasswordScreen(type="") {
+		if (type === "login") {
+			this.setState(updateByPropertyName("resetPasswordScreen", false));
+		} else {
+			this.setState(updateByPropertyName("resetPasswordScreen", true));
+		}
+	}
+
 	forgotPassword() {
-		Auth.forgotPassword("vinusurendran1988@gmail.com")
+		if (this.state.email === "") {
+			this.setState(updateByPropertyName("resetPasswordError", 1));
+			return;
+		}
+		Auth.forgotPassword(this.state.email)
 		.then(data => {
-			console.log(data)
+			this.setState(updateByPropertyName("tempPasswordScreenActivationCode", true));
+			this.setState(updateByPropertyName("tempPasswordScreen", true));
+			this.setState(updateByPropertyName("resetPasswordScreen", false));
+			this.setState(updateByPropertyName("resetPasswordError", 0));
+			this.setState(updateByPropertyName("resetPasswordErrorMessage", ""));
 		})
 		.catch(err => {
+			this.setState(updateByPropertyName("resetPasswordError", 2));
+			this.setState(updateByPropertyName("resetPasswordErrorMessage", err.message));
 			console.log(err)
 		});
 	}
@@ -138,7 +176,7 @@ class Login extends Component {
 							<div class="form form--signup form--login mb-5">
 								<div class="row">
 									<div class="col-md-6">
-										{this.state.tempPasswordScreen === false && 
+										{(this.state.tempPasswordScreen === false && this.state.resetPasswordScreen === false) && 
 											<div class="page--login__content">
 												{error !== null && 
 													<div class="alert alert-danger" role="alert">
@@ -181,57 +219,93 @@ class Login extends Component {
 													<button onClick={this.onSubmit} type="button" class="btn btn-primary">Login</button>
 												</div>
 												<div class="text-center">
-													<a onClick={() => this.forgotPassword()} href="javascript:void(0)" class="link--forget">Forgot your Password?</a>
+													<a onClick={() => this.showForgotPasswordScreen()} href="javascript:void(0)" class="link--forget">Forgot your Password?</a>
 												</div>
 											</div>
 										}
-										{this.state.tempPasswordScreen === true &&
-											<div class="card">
-												<div class="card-header">
-													<h3 class="mb-0">Change Password</h3>
+										{(this.state.tempPasswordScreen === true && this.state.resetPasswordScreen === false) &&
+											<div class="page--login__content">
+												<h3>Change Password</h3>
+												{this.state.passwordError === 2 && 
+													<div class="alert alert-danger" role="alert">
+														Password missmatch error.
+													</div>
+												}
+												{this.state.passwordError === 1 && 
+													<div class="alert alert-danger" role="alert">
+														Password cannot be empty.
+													</div>
+												}
+												{this.state.passwordError === 3 && 
+													<div class="alert alert-danger" role="alert">
+														{this.state.passwordErrorCognitoMessage}
+													</div>
+												}
+												<form class="form" role="form" autocomplete="off">
+													<div class="form-group">
+														<label for="inputPasswordOld">Activation Code</label>
+														<input autocomplete="off"
+															onChange={event =>
+																this.setState(updateByPropertyName("activationCode", event.target.value))
+															}
+															value={this.state.activationCode} type="number" class="txt" id="inputPasswordOld" required="" />
+														<span class="form-text small text-muted">
+															<i>Enter the activation code sent to the registered email address.</i>
+														</span>
+													</div>
+													<div class="form-group">
+														<label for="inputPasswordOld">New Password</label>
+														<input autocomplete="off"
+															onChange={event =>
+																this.setState(updateByPropertyName("newPassword", event.target.value))
+															}
+															value={this.state.newPassword} type="password" class="txt" id="inputPasswordOld" required="" />
+														<span class="form-text small text-muted">
+															<i>Note: The password must contain an uppercase letter a lowercase letter a number and a special character with atleast 8 characters in length.</i>
+														</span>
+													</div>
+													<div class="form-group">
+														<label for="inputPasswordNew">Confirm Password</label>
+														<input autocomplete="off"
+															onChange={event =>
+																this.setState(updateByPropertyName("confirmPassword", event.target.value))
+															}
+															value={this.state.confirmPassword} type="password" class="txt" id="inputPasswordNew" required="" />
+													</div>
+													<div class="form-group">
+														<button type="button" onClick={() => this.updateNewPassword()} class="btn btn-primary">Save</button>
+													</div>
+												</form>
+											</div>
+										}
+										{this.state.resetPasswordScreen === true && 
+											<div class="page--login__content">
+												<h3>Reset Password</h3>
+												{this.state.resetPasswordError === 1 && 
+													<div class="alert alert-danger" role="alert">
+														Email is empty
+													</div>
+												}
+												{this.state.passwordError === 2 && 
+													<div class="alert alert-danger" role="alert">
+														{this.state.resetPasswordErrorMessage}
+													</div>
+												}
+												<div class="form-group">
+													<label for="inputPasswordOld">Email</label>
+													<input autocomplete="off"
+														onChange={event =>
+															this.setState(updateByPropertyName("email", event.target.value))
+														}
+														value={this.state.email} type="email" class="txt" id="inputPasswordOld" required="" />
 												</div>
-												<div class="card-body">
-													{this.state.passwordError === 2 && 
-														<div class="alert alert-danger" role="alert">
-															Password missmatch error.
-														</div>
-													}
-													{this.state.passwordError === 1 && 
-														<div class="alert alert-danger" role="alert">
-															Password cannot be empty.
-														</div>
-													}
-													{this.state.passwordError === 3 && 
-														<div class="alert alert-danger" role="alert">
-															{this.state.passwordErrorCognitoMessage}
-														</div>
-													}
-													<form class="form" role="form" autocomplete="off">
-														<div class="form-group">
-															<label for="inputPasswordOld">New Password</label>
-															<input autocomplete="off"
-																onChange={event =>
-																	this.setState(updateByPropertyName("newPassword", event.target.value))
-																}
-																value={this.state.newPassword} type="password" class="txt" id="inputPasswordOld" required="" />
-														</div>
-														<div class="form-group">
-															<span class="form-text small text-muted">
-																<i>Note: The password must contain an uppercase letter a lowercase letter a number and a special character with atleast 8 characters in length.</i>
-															</span><br />
-															<label for="inputPasswordNew">Confirm Password</label>
-															<input autocomplete="off"
-																onChange={event =>
-																	this.setState(updateByPropertyName("confirmPassword", event.target.value))
-																}
-																value={this.state.confirmPassword} type="password" class="txt" id="inputPasswordNew" required="" />
-														</div>
-														<div class="form-group">
-															<button type="button" onClick={() => this.updateNewPassword()} class="btn btn-primary">Save</button>
-														</div>
-													</form>
+												<div class="btn-wrap mb-3">
+													<button type="button" onClick={() => this.forgotPassword()} class="btn btn-primary">Send Activation Code</button>
 												</div>
-											</div> 
+												<div class="text-center">
+													<a onClick={() => this.showForgotPasswordScreen("login")} href="javascript:void(0)" class="link--forget">Login?</a>
+												</div>
+											</div>
 										}
 									</div>
 									<div class="col-md-6">
